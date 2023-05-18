@@ -1,0 +1,84 @@
+{
+    "keywords": [
+        {
+            "name": "자전거",
+            "rank_changed": 0,
+            "current_rank": 1
+        },
+        {
+            "name": "의자",
+            "rank_changed": 0,
+            "current_rank": 2
+        },
+        {
+            "name": "아이폰",
+            "rank_changed": 0,
+            "current_rank": 3
+        },
+        {
+            "name": "냉장고",
+            "rank_changed": 0,
+            "current_rank": 4
+        },
+        {
+            "name": "노트북",
+            "rank_changed": 0,
+            "current_rank": 5
+        },
+        {
+            "name": "패딩",
+            "rank_changed": 0,
+            "current_rank": 6
+        },
+        {
+            "name": "아이패드",
+            "rank_changed": 0,
+            "current_rank": 7
+        },
+        {
+            "name": "모니터",
+            "rank_changed": 1,
+            "current_rank": 8
+        },
+        {
+            "name": "스타벅스",
+            "rank_changed": 12,
+            "current_rank": 9
+        },
+        {
+            "name": "책상",
+            "rank_changed": 0,
+            "current_rank": 10
+        },
+        {
+            "name": "캠핑",
+            "rank_changed": -3,
+            "current_rank": 11
+        },
+        {
+            "name": "김치냉장고",
+            "rank_changed": -1,
+            "current_rank": 12
+        },
+        {
+            "name": "쇼파",
+            "rank_changed": 0,
+            "current_rank": 13
+        },
+        {
+            "name": "가방",
+            "rank_changed": 1,
+            "current_rank": 14
+        },
+        {
+            "name": "에어팟",
+            "rank_changed": -1,
+            "current_rank": 15
+        },
+        {
+            "name": "컴퓨터",
+            "rank_changed": 1,
+            "current_rank": 16
+        }
+    ]
+}

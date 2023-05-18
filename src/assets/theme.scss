@@ -1,0 +1,53 @@
+body.light {
+    .text-color {
+        color: #212124;
+        a {
+            color: #212124;
+        }
+    }
+
+    .text-color2 {
+        color: #adb1ba;
+    }
+
+    .general-text-color {
+        color: #2f343e;
+
+        a {
+            color: #2f343e;
+        }
+    }
+
+    .general-background-color {
+        background-color: #ffffff;
+    }
+
+    background-color: #ffffff;
+}
+
+body.dark {
+    .text-color {
+        color: #eaebee;
+        a {
+            color: #eaebee;
+        }
+    }
+
+    .text-color2 {
+        color: #adb1ba;
+    }
+
+    .general-text-color {
+        color: #adb1ba;
+
+        a {
+            color: #adb1ba;
+        }
+    }
+
+    .general-background-color {
+        background-color: rgb(35, 35, 35);
+    }
+
+    background-color: rgb(35, 35, 35);
+}
