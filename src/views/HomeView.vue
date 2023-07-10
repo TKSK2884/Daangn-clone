@@ -158,21 +158,21 @@ export default class HomeView extends Vue {
         this.$store.commit("setDarkMode", false);
         this.daangnArray = daangnList.keywords as Keywords[];
 
-        this.transDaangnArray();
+        this.convertDaangnArray();
     }
 
-    transDaangnArray() {
-        let transedDaangnArray: Keywords[] = [];
+    convertDaangnArray() {
+        let convertedDaangnArray: Keywords[] = [];
 
         for (
             let i: number = 0;
             i < Math.min(10, this.daangnArray.length);
             i++
         ) {
-            transedDaangnArray[i] = this.daangnArray[i];
+            convertedDaangnArray[i] = this.daangnArray[i];
         }
 
-        this.daangnArray = transedDaangnArray;
+        this.daangnArray = convertedDaangnArray;
     }
 }
 </script>
@@ -200,10 +200,10 @@ export default class HomeView extends Vue {
                 padding-bottom: 20px;
 
                 .boldText {
+                    padding-bottom: 20px;
+
                     font-size: 40px;
                     font-weight: bold;
-
-                    padding-bottom: 20px;
                 }
 
                 .text {
@@ -249,6 +249,7 @@ export default class HomeView extends Vue {
 
                     .story {
                         padding-right: 30px;
+
                         .logo {
                             width: 55px;
                             height: 55px;

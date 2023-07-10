@@ -102,17 +102,19 @@
                                 <div
                                     :style="
                                         getBackgroundItemImage(
-                                            getTransProduct(item)
+                                            getConvertProduct(item)
                                         )
                                     "
                                     :class="$style.itemImage"
                                 ></div>
                                 <div :class="$style.itemName">
-                                    {{ getTransProduct(item).name }}
+                                    {{ getConvertProduct(item).name }}
                                 </div>
                                 <div :class="$style.itemPrice">
                                     {{
-                                        convertItemPrice(getTransProduct(item))
+                                        convertItemPrice(
+                                            getConvertProduct(item)
+                                        )
                                     }}
                                 </div>
                                 <div :class="$style.itemAddress">
@@ -120,9 +122,10 @@
                                 </div>
                                 <div :class="$style.itemLikesBox">
                                     <div :class="$style.likes">
-                                        관심 {{ getTransProduct(item).likes }} ·
+                                        관심
+                                        {{ getConvertProduct(item).likes }} ·
                                         채팅
-                                        {{ getTransProduct(item).chats }}
+                                        {{ getConvertProduct(item).chats }}
                                     </div>
                                 </div>
                             </router-link>
@@ -223,17 +226,7 @@ export default class Articles extends Vue {
         return item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
-    getCheckDate(date: number) {
-        if (date == 0)
-            return {
-                display: `none`,
-            };
-        else {
-            return {};
-        }
-    }
-
-    getBackgroundImage(): any {
+    getBackgroundImage() {
         let randomNumber: number = Math.floor(
             Math.random() * this.getProduct().images.length
         );
@@ -243,7 +236,7 @@ export default class Articles extends Vue {
         };
     }
 
-    getBackgroundItemImage(item: Product): {} {
+    getBackgroundItemImage(item: Product) {
         if (item.images.length == 0) {
             return {};
         }
@@ -253,7 +246,7 @@ export default class Articles extends Vue {
         };
     }
 
-    getProfileImage(): any {
+    getProfileImage() {
         if (this.getRegisteredUser().thumbnail == null) {
             return {
                 backgroundImage: `url(${require("@/assets/default.png")})`,
@@ -307,7 +300,7 @@ export default class Articles extends Vue {
         return "";
     }
 
-    getTemperatureGaugeStyle(): {} {
+    getTemperatureGaugeStyle() {
         let temperature: number = this.setTemperture();
 
         if (temperature >= 60) {
@@ -457,7 +450,7 @@ export default class Articles extends Vue {
         );
     }
 
-    getTransProduct(item: Product): Product {
+    getConvertProduct(item: Product): Product {
         return (
             item ?? {
                 id: "",

@@ -1,7 +1,7 @@
 <template>
     <div :class="[$style.mainContainer, 'general-background-color']">
         <div :class="$style.nav">
-            <div :class="[$style.container, $style.left]">
+            <div :class="$style.container">
                 <div :class="$style.logoBox">
                     <router-link :to="'/'"
                         ><div :class="$style.logo"></div

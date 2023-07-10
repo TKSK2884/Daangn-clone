@@ -19,7 +19,7 @@
                             {{ convertPrice(item) }}
                         </div>
                         <div :class="$style.description">
-                            {{ getRegisteredUser(item).location }}
+                            {{ getRegisterUser(item).location }}
                         </div>
                         <div :class="$style.likeBox">
                             <div :class="$style.likes">
@@ -88,7 +88,7 @@ export default class ProductsContainer extends Vue {
         return item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
-    getRegisteredUser(item: Product): User {
+    getRegisterUser(item: Product): User {
         return (
             item.registered_by ?? {
                 name: "",
@@ -108,7 +108,7 @@ export default class ProductsContainer extends Vue {
                 likes: 0,
                 chats: 0,
                 images: [],
-                registered_by: this.getRegisteredUser(item),
+                registered_by: this.getRegisterUser(item),
                 is_hidden: false,
             }
         );
@@ -136,7 +136,7 @@ export default class ProductsContainer extends Vue {
             a {
                 text-decoration: none;
 
-                color: rgb(33, 37, 41);
+                color: #212529;
             }
 
             .thumbnail {

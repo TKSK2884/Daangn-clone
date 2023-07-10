@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div :class="$style.index">
         <div
             :class="[
                 $style.appContainer,

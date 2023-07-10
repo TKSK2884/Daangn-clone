@@ -2,7 +2,7 @@
     <div :class="$style.mainContainer">
         <div :class="$style.container">
             <div :class="$style.title">오늘의 중고 인기 검색어</div>
-            <div :class="$style.Section">
+            <div :class="$style.section">
                 <div
                     v-for="keyword in daangnArray"
                     :class="$style.rankBox"
@@ -103,7 +103,7 @@ export default class TopKeywordsView extends Vue {
             text-align: center;
         }
 
-        .Section {
+        .section {
             padding-top: 10px;
 
             .rankBox {
