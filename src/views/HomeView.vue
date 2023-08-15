@@ -389,7 +389,7 @@ export default class HomeView extends Vue {
             a {
                 text-decoration: none;
 
-                color: rgb(33, 37, 41);
+                color: #212529;
             }
         }
     }
