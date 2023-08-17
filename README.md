@@ -1,4 +1,4 @@
-# daangnClone
+# daangn-clone
 
 ## Project setup
 
