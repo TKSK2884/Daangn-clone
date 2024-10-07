@@ -6,10 +6,9 @@
 - **Store**와 **CSS**를 활용하여 다크 모드 기능을 구현하였습니다.
 
 ## 🚀 프로젝트 데모
-<img src="https://github.com/user-attachments/assets/3a83e436-33ff-4899-9f1a-1d8a9154b4a7" width="600px" height="480px">
-
 - [당근마켓 클론 데모 페이지](https://daangn-clone.highground.kr/)
 
+<img src="https://github.com/user-attachments/assets/3a83e436-33ff-4899-9f1a-1d8a9154b4a7" width="600px" height="480px">
 ## 🔧 사용 기술 스택
 Vue 2.0, TypeScript, SCSS
 
